@@ -21,7 +21,7 @@ class Header extends Component {
           aria-label="Open main menu"
         >
           <span className="sr-only">Open main menu</span>
-          <span className="fa fa-bars" aria-hidden="true" />
+          <span aria-hidden="true"> = Menu</span>
         </a>
 
         <h1 className="logo">hamburgers</h1>
@@ -34,6 +34,7 @@ class Header extends Component {
           aria-label="Main menu"
         >
           <a
+            href="#main-menu-toggle"
             role="button"
             id="main-menu-close"
             className="menu-close"
@@ -42,7 +43,7 @@ class Header extends Component {
             aria-label="Close main menu"
           >
             <span className="sr-only">Close main menu</span>
-            <span className="fa fa-close" aria-hidden="true" />
+            <span aria-hidden="true">x</span>
           </a>
           <ul>
             <li>
