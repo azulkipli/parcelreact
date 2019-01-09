@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon -w package.json -w index.html --exec 'parcel src/index.html --log-level 4'",
-    "clean": "rm -rf dist",
+    "start": "nodemon -w .env -w package.json -w index.html --exec 'parcel src/index.html --log-level 4'",
+    "clean": "rm -rf build",
     "prebuild": "npm run clean",
     "build": "parcel build src/index.html -d build",
     "postbuild": "npm run workbox",
@@ -15,7 +15,9 @@
   "dependencies": {
     "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
+    "parcel-bundler": "^1.11.0",
     "parcel-plugin-asset-copier": "^1.0.0",
+    "postcss-modules": "^1.4.1",
     "preact": "^8.4.2",
     "preact-compat": "^3.18.4",
     "react": "^16.7.0",
@@ -24,8 +26,7 @@
     "react-hot-loader": "^4.6.3",
     "react-router-dom": "^4.3.1",
     "unissist": "^1.3.0",
-    "unistore": "^3.2.1",
-    "parcel-bundler": "^1.11.0"
+    "unistore": "^3.2.1"
   },
   "assetsPath": "static",
   "alias": {
@@ -46,7 +47,6 @@
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "babel-plugin-transform-remove-console": "^6.9.4",
     "nodemon": "^1.18.9",
-    "parcel-plugin-purgecss": "^2.1.0",
     "serve": "^10.1.1",
     "workbox-cli": "^3.6.3"
   }

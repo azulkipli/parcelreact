@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "../components/Header";
 import { SampleArticle } from "../components/Sample";
-console.info("info", process);
+import "../css/style.css";
 
 class App extends Component {
   render() {

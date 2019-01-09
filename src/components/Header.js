@@ -21,7 +21,7 @@ class Header extends Component {
           aria-label="Open main menu"
         >
           <span className="sr-only">Open main menu</span>
-          <span aria-hidden="true"> = Menu</span>
+          <span aria-hidden="true"> = </span>
         </a>
 
         <h1 className="logo">hamburgers</h1>
@@ -43,7 +43,7 @@ class Header extends Component {
             aria-label="Close main menu"
           >
             <span className="sr-only">Close main menu</span>
-            <span aria-hidden="true">x</span>
+            <span aria-hidden="true"> x </span>
           </a>
           <ul>
             <li>

@@ -6,8 +6,6 @@ import { store } from "./store";
 import { BrowserRouter } from "react-router-dom";
 import App from "./containers/App";
 
-import "./css/style.css";
-
 const rootEl = document.getElementById("root");
 const render = Component =>
   ReactDOM.render(
@@ -19,7 +17,7 @@ const render = Component =>
     rootEl
   );
 
-console.log(`[APP] running in ${process.env.NODE_ENV} mode.`);
+console.info(`${process.env.APP_NAME} running in ${process.env.NODE_ENV} mode.`);
 if (process.env.NODE_ENV === "production") {
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
