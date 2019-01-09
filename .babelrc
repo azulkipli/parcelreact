@@ -4,7 +4,6 @@
     "@babel/plugin-syntax-dynamic-import",
     "@babel/plugin-proposal-class-properties",
     "@babel/plugin-proposal-export-namespace-from",
-    "@babel/plugin-proposal-throw-expressions",
-    ["transform-remove-console", { "exclude": ["error", "warn"] }]
+    "@babel/plugin-proposal-throw-expressions"
   ]
 }
