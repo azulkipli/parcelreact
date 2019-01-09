@@ -6,7 +6,7 @@ import { store } from "./store";
 import { BrowserRouter } from "react-router-dom";
 import App from "./containers/App";
 
-import "./css/app.css";
+import "./css/style.css";
 
 const rootEl = document.getElementById("root");
 const render = Component =>
